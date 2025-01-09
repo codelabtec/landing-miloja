@@ -1,0 +1,523 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%; /* Arredonda a imagem para criar um efeito circular */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #9da292;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav .logo img {
+    max-width: 100px;
+}
+
+.top-nav .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.top-nav .menu ul li a {
+    text-decoration: none;
+    color: #f4db76;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.top-nav .menu ul li a:hover {
+    color: #fff;
+}
+
+.top-nav .search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+}
+
+
+/* Hero Banner */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('banner.jpg'); /* Substituir pela imagem do banner */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: #333;
+    position: relative;
+}
+
+.hero-banner .banner-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero-banner .cta-button {
+    background-color: #f4db76;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.hero-banner .cta-button:hover {
+    transform: scale(1.1);
+}
+
+/* Highlights Section */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #333;
+    color: #f4db76;
+    text-align: center;
+}
+
+.highlights .highlight img {
+    max-width: 50px;
+    margin-bottom: 1rem;
+    filter: brightness(3); /* Clareia a imagem */
+    
+}
+
+
+.highlights .highlight p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: #fff;
+}
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: auto; /* Permite que a altura se ajuste ao tamanho do conteúdo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita qualquer transbordamento */
+    padding: 0; /* Remove margens internas desnecessárias */
+}
+
+.hero-banner .hero-image {
+    width: 100%;
+    height: auto; /* Garante que a proporção da imagem seja preservada */
+    object-fit: cover;
+}
+
+.hero-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Sobreposição escura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-banner .cta-button {
+    background-color: #f4db76;
+    color: #333;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-banner .cta-button:hover {
+    background-color: #333;
+    color: #f4db76;
+}
+/* Estilização da seção de localização */
+.section.location {
+    text-align: center; /* Centraliza todo o conteúdo */
+    background-color: #f4db76; /* Fundo com cor da logo */
+    padding: 2rem 1rem; /* Espaçamento interno para ampliar a área */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destacar a seção */
+    margin: 2rem auto; /* Margem superior e inferior para espaçamento */
+    max-width: 800px; /* Define uma largura máxima para centralizar melhor */
+}
+
+.section.location h2 {
+    font-size: 2rem; /* Aumenta o tamanho do título */
+    color: #333; /* Cor do texto para contraste */
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    font-weight: bold; /* Negrito no título */
+}
+
+.section.location p {
+    font-size: 1.2rem; /* Tamanho da fonte do texto de endereço */
+    color: #333; /* Cor do texto */
+    margin-bottom: 1.5rem; /* Espaçamento entre o texto e o mapa */
+}
+
+.section.location iframe {
+    width: 100%; /* Ajusta a largura do mapa para ocupar todo o espaço */
+    height: 350px; /* Define a altura do mapa */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Adiciona cantos arredondados no mapa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o mapa */
+}
+/* Seção de Produtos */
+.products-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4; /* Fundo leve para destaque */
+    border-top: 2px solid #f4db76; /* Linha decorativa */
+}
+
+.products-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: 500px; /* Ajusta a altura das imagens dos produtos */
+    object-fit: cover; /* Garante que a imagem ocupe toda a área sem distorção */
+}
+
+.product p {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Benefícios */
+.benefits-section {
+    padding: 3rem;
+    background-color: #f4db76; /* Fundo com um tom moderno e vibrante */
+    color: #333;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.benefit {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.benefit h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.benefit p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-banner .overlay, 
+.hero-banner .cta-button, 
+.section.location, 
+.section.location iframe, 
+.product, 
+.benefit {
+    border-radius: 5px; /* Bordas padrão de 5px */
+}
+
+.instagram-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #bdc4ad; /* Cor de fundo para diferenciar */
+    margin-top: 0px; /* Adiciona espaço acima para separação */
+    border-top: 0px solid #f4db76; /* Linha decorativa que ajuda na separação */
+}
+
+.instagram-section h2 {
+    font-size: 2rem;
+    color: #333; /* Altere para preto */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px;
+}
+
+/* Seção do Instagram */
+.instagram-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite ajustar em telas menores */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Foto do perfil */
+.instagram-profile {
+    flex: 1; /* Ocupa espaço proporcional */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.instagram-profile p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.instagram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e1306c; /* Cor do botão no estilo do Instagram */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+    background-color: #c1275b;
+}
+
+/* Moldura do celular */
+.phone-frame {
+    width: 320px;
+    height: 640px;
+    border: 15px solid #333;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-frame::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 5px;
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.phone-frame img {
+    width: 120%; /* Reduz a largura dentro da moldura */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+    border-radius: 10px;
+}
+
+
+/* Pop-ups com vantagens */
+.instagram-benefits {
+    flex: 2; /* Ocupa mais espaço */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popup {
+    background-color: #f4db76;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.popup:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .instagram-content {
+        flex-direction: column;
+    }
+
+    .phone-frame {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+/* Estilos para a imagem da mão segurando o celular */
+.hand-phone-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hand-phone {
+    width: 100%;
+    max-width: 400px; /* Ajuste conforme o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos para a imagem da mão segurando o celular como botão */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Ajuste a distância do fundo da tela */
+    right: 20px; /* Fixa a imagem à direita */
+    width: 120px; /* Ajuste o tamanho da imagem */
+    height: auto;
+    z-index: 1000; /* Garante que fique sobre outros elementos */
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.whatsapp-button:hover img {
+    opacity: 0.9; /* Efeito de hover */
+}
+/* Estilos para o logo da empresa no footer */
+.developer-logo {
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.developer-logo-img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.developer-logo:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+.developer-logo-img:hover {
+    opacity: 0.8; /* Efeito visual ao passar o mouse na imagem */
+}
+
