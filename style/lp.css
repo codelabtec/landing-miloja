@@ -3,7 +3,96 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
 }
+
+:root {
+    --text-color-white: #ffffff;
+    --menu-links-color: #444444;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-Black.ttf') format('truetype'),
+         url('/fonts/Stara-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-BlackItalic.ttf') format('truetype'),
+         url('/fonts/Stara-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-Bold.ttf') format('truetype'),
+         url('/fonts/Stara-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-BoldItalic.ttf') format('truetype'),
+         url('/fonts/Stara-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-ExtraBold.ttf') format('truetype'),
+         url('/fonts/Stara-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-ExtraBoldItalic.ttf') format('truetype'),
+         url('/fonts/Stara-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-Medium.ttf') format('truetype'),
+         url('/fonts/Stara-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-MediumItalic.ttf') format('truetype'),
+         url('/fonts/Stara-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-SemiBold.ttf') format('truetype'),
+         url('/fonts/Stara-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stara';
+    src: url('/fonts/Stara-SemiBoldItalic.ttf') format('truetype'),
+         url('/fonts/Stara-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
 
 .logo img {
     height: 50px;
@@ -16,12 +105,49 @@ body {
     font-family: 'Arial', sans-serif;
     color: #fff;
     background-color: #9da292;
+    font-family: 'Stara', sans-serif;
 }
+
+
+.header-container {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    color: var(--text-color-white);
+    background: var(--gradiente-capa, linear-gradient(90deg, #C3C0AD 8.59%, #CCCEC1 30.64%, #C5C6B4 55.01%, #B0A891 91.25%));
+}
+
+.header-content {
+    display: flex;
+    max-width: 100%;
+    width: 1320px;
+    padding: 0px 3.125rem;
+    margin: 0 auto;
+    height: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    color: var(--text-color-white);
+}
+
+.menu ul li a {
+    color: var(--menu-links-color);
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
 
 /* Top Navigation */
 .top-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #333;
     padding: 0.5rem 2rem;
@@ -30,32 +156,25 @@ body {
     z-index: 1000;
 }
 
-.top-nav .logo img {
-    max-width: 100px;
+.logo img {
+   display: flex;
+    align-items: center;
 }
 
-.top-nav .menu ul {
+.header-content .instagram-button {
+    background-color: none;
+    border: 1px solid var(--menu-links-color);
     display: flex;
-    list-style: none;
-    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    
+    
 }
 
-.top-nav .menu ul li a {
-    text-decoration: none;
-    color: #f4db76;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.top-nav .menu ul li a:hover {
-    color: #fff;
-}
-
-.top-nav .search-bar input {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 20px;
-    width: 250px;
+.header-content .instagram-button a {
+    color: var(--menu-links-color);
+    font-size: 0.875rem;
 }
 
 
@@ -65,12 +184,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('banner.jpg'); /* Substituir pela imagem do banner */
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+    background: var(--gradiente-capa, linear-gradient(90deg, #C3C0AD 8.59%, #CCCEC1 30.64%, #C5C6B4 55.01%, #B0A891 91.25%));
+    height: 928px;
+    width: 100%;
     color: #333;
-    position: relative;
 }
 
 .hero-banner .banner-content {
@@ -370,20 +487,6 @@ footer {
     color: #333;
 }
 
-.instagram-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #e1306c; /* Cor do botão no estilo do Instagram */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.instagram-button:hover {
-    background-color: #c1275b;
-}
 
 /* Moldura do celular */
 .phone-frame {
