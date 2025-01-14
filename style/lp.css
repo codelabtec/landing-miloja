@@ -176,7 +176,11 @@ body {
     color: var(--menu-links-color);
     font-size: 0.875rem;
 }
-
+.banner-text img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /* Hero Banner */
 .hero-banner {
@@ -185,39 +189,34 @@ body {
     justify-content: center;
     text-align: center;
     background: var(--gradiente-capa, linear-gradient(90deg, #C3C0AD 8.59%, #CCCEC1 30.64%, #C5C6B4 55.01%, #B0A891 91.25%));
-    height: 928px;
-    width: 100%;
+    max-width: 100%;    
     color: #333;
+}
+
+.header-content {
+    width: 1320px;
+    padding: 0 3.125rem;
+
 }
 
 .hero-banner .banner-content {
     background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
-.hero-banner h1 {
-    font-size: 2.5rem;
-    color: #333;
+
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1320px;
+    padding: 3rem 3.125rem;
 }
 
-.hero-banner p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
-
-.hero-banner .cta-button {
-    background-color: #f4db76;
-    color: #333;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px;
-    transition: transform 0.3s;
-}
-
-.hero-banner .cta-button:hover {
-    transform: scale(1.1);
+.banner-logo-branca {
+    place-self: end;
+    padding-bottom: 3rem;
 }
 
 /* Highlights Section */
@@ -556,17 +555,70 @@ footer {
     line-height: 1.5;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .instagram-content {
-        flex-direction: column;
+@media screen and (max-width: 890px) {
+
+    .acessorios-logo img {
+        height: 300px;
     }
 
-    .phone-frame {
-        width: 250px;
-        height: 500px;
+    .banner-logo-branca img {
+        height: 56px;
     }
+
 }
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .header-content {
+        padding: 0 1rem;
+    }
+
+    .hero-content {
+        padding: 3rem 1rem;
+        min-height: 400px;
+    }
+
+    .acessorios-logo img {
+        height: 156px;
+    }
+
+    .banner-logo-branca img {
+        height: 32px;
+    }
+
+    .hero-banner {
+        min-height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .hero-content {
+       align-items: start;
+
+    }
+
+    .hero-content {
+        padding: 1rem 1rem;
+        min-height: 400px;
+    }
+
+    .banner-text  {
+        place-self: center;
+    }
+
+}
+
+
 
 /* Estilos para a imagem da mão segurando o celular */
 .hand-phone-container {
