@@ -112,12 +112,7 @@
         </div>
     </section>
 
-<<<<<<< HEAD
-    <!-- Photos -->
-    <section class="photos-container">
-=======
-    <section id="produtos"class="photos-container">
->>>>>>> 39ce36f953a0dda57e44a6256b74f6dba365bd18
+    <section id="produtos" class="photos-container">
         <div class="photos-content">
             <h2>Confira Nossos Produtos</h2>
 
@@ -194,8 +189,64 @@
                     </div>
                 </div>
             </div>
+
+                <div class="instagram-button instagram-social-media-white">
+                    <img src="./assets//Icones/instagram-white-icon.svg" alt="Ícone branco do instagram">
+                    <a href="https://www.instagram.com/milojatuloja_ro" href="#" >Visite nossa loja</a>
+                </div>
         </div>
     </section>
+
+    <!-- Address -->
+
+    <style>
+        
+    </style>
     
+    <section class="address-container">
+        <div class="address-content">
+            <h2>Visite Nossa Loja</h2>
+            <div class="address-map">
+                <div id="lottie-container" style="width: 100%; max-width: 600px; margin: 0 auto;"></div>
+            </div>
+
+            <div class="instagram-button instagram-social-media-white address-instagram">
+                <img src="./assets//Icones/map.svg" alt="Ícone branco do instagram">
+                <a href="https://www.instagram.com/milojatuloja_ro" href="#" >Ver no mapa</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>© 2025 Miloja Tuloja. Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-menu">
+                
+            </div>
+            <div class="footer-codelab">
+                <p>Desenhado e Desenvolvido por: </p>
+                <img src=".//assets/Logo/codelab-logo.svg" alt="Ícone da CodeLap">
+            </div>
+    </footer>
+    
+
+    <!-- Lottie animantion function-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-container'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './assets/Motion/photos-animation.json'
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
 </body>
 </html>
