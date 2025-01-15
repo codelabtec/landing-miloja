@@ -98,7 +98,8 @@
 .logo img {
     height: 50px;
     width: auto;
-    border-radius: 50%; /* Arredonda a imagem para criar um efeito circular */
+    border-radius: 50%; 
+    
 }
 
 
@@ -276,6 +277,7 @@ body {
 
 .all-cards {
     display: flex;
+    
 }
 
 .card {
@@ -317,7 +319,6 @@ body {
 
 .photos-content {
     max-width: 1320px;
-    
     margin: 0 auto;
     padding: 7.75rem 3.125rem;
     display: flex;
@@ -357,10 +358,16 @@ body {
 
 .group-1 {
     place-self: start;
+    gap: 12rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .group-2 {
     place-self: end;
+    gap: 12rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .photo-text {
@@ -382,6 +389,43 @@ body {
     z-index: 1;
 }
 
+.social-media-container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #CFCCB8;
+}
+
+.social-media-content {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 7.75rem 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-media-content h2 {
+    font-size: 3rem;
+    color: var(--text-main-color);
+    font-weight: 500;
+}
+
+.social-media-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.social-media-image-mobile img {
+    display: none;
+}
+
+.social-media-cards {
+    display: none !important;
+}
 
 
 
@@ -417,10 +461,12 @@ body {
 
     .group-1 {
         place-self: center;
+        gap: 2rem;
     }
     
     .group-2 {
         place-self: center;
+        gap: 2rem;
     }
 
     .photos-group {
@@ -462,7 +508,6 @@ body {
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        
         gap: 1.5rem;
         padding: 1rem 1rem;
     }
@@ -505,7 +550,6 @@ body {
 
     .photos-content {
         max-width: 1320px;
-        
         margin: 0 auto;
         padding: 7.75rem 3.125rem;
         display: flex;
@@ -516,7 +560,6 @@ body {
         gap: 6rem;
     }
     
-
     .product-content h2 {
         font-size: 1.5rem;
     }
@@ -533,6 +576,31 @@ body {
     .differential-content {
         padding-bottom: 3rem;
     }
+
+    .social-media-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-media-image img {
+        display: none;
+    }
+
+    .social-media-image-mobile img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .social-media-content {
+        padding: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .social-media-cards {
+        display: flex !important;
+    }
+    
 
 }
 
@@ -564,6 +632,17 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para a imagem da mão segurando o celular */
 .hand-phone-container {
     position: relative;
@@ -574,7 +653,7 @@ body {
 
 .hand-phone {
     width: 100%;
-    max-width: 400px; /* Ajuste conforme o tamanho da imagem */
+    max-width: 400px; 
     height: auto;
     border-radius: 10px;
 }
@@ -582,11 +661,11 @@ body {
 /* Estilos para a imagem da mão segurando o celular como botão */
 .whatsapp-button {
     position: fixed;
-    bottom: 20px; /* Ajuste a distância do fundo da tela */
-    right: 20px; /* Fixa a imagem à direita */
-    width: 120px; /* Ajuste o tamanho da imagem */
+    bottom: 20px; 
+    right: 20px; 
+    width: 120px; 
     height: auto;
-    z-index: 1000; /* Garante que fique sobre outros elementos */
+    z-index: 1000; 
 }
 
 .whatsapp-button img {
@@ -597,7 +676,7 @@ body {
 }
 
 .whatsapp-button:hover img {
-    opacity: 0.9; /* Efeito de hover */
+    opacity: 0.9; 
 }
 /* Estilos para o logo da empresa no footer */
 .developer-logo {
