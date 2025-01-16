@@ -170,8 +170,7 @@ body {
     align-items: center;
     padding: 0.5rem 1rem;
     gap: 0.5rem;
-    
-    
+    cursor: pointer;   
 }
 
 .header-content .instagram-button a {
@@ -436,6 +435,7 @@ body {
     padding: 0.75rem 4rem;
     background-color: var(--text-main-color);
     max-width: 100%;
+    cursor: pointer;
 }
 
 .instagram-social-media-white a {
