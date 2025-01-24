@@ -278,7 +278,6 @@ body {
 
 .all-cards {
     display: flex;
-    
 }
 
 .card {
@@ -425,7 +424,7 @@ body {
 }
 
 .social-media-cards {
-    display: none !important;
+    display: flex;
 }
 
 .instagram-social-media-white  {
@@ -531,11 +530,10 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 100%;
     }
 
     .card {
-        max-width: 100%;
+        min-width: 100%;
         margin-bottom: -1px;
     }
 
@@ -544,8 +542,11 @@ body {
     }
     
     .card-item {
-        width: 100%;
+        max-width: 100%;
     }
+
+    
+    
 
     .photos-group {
     
